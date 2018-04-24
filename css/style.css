@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size:13px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ffee9b;
+}
+
+h1 {
+    size:2rem;
+}
+
+header {
+    background-color: black;
+}
+footer {
+    background-color: #505000;
+    /* background-color: #b79903; */
+}
+
+/************* Grid ************/
+
+.grid {
+    display: grid;
+    grid-template-columns: [full-start] 1fr
+    [main-start]minmax(0,80em)[main-end] 
+    1fr[full-end];
+}
+
+.grid__full {
+    grid-column: full-start/full-end;
+}
+
+.grid__main {
+    grid-column: main-start/main-end;
+}
+
+.grid__two {
+    display: grid;
+    grid-template-columns: [main-start]minmax(0,40em)[main-center]minmax(0,40em)[main-end]
+}
+.grid__two--full {
+    grid-column: main-start/main-end;
+}
+.grid__two--left {
+    grid-column: main-start/main-center;
+}
+.grid__two--right {
+    grid-column: main-center/main-end;
+}
+
+.section1 {
+    background-color: #fff;
+}
+
+.sectionWireless {
+
+}
+.section2 {
+    background-color: #fff;
+}
+
+.sectionSpecifications {
+    background-color: #000000;
+}
+
+.sectionSold {
+    background-color: #fff;
+}
+
