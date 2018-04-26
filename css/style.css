@@ -5,28 +5,45 @@ html {
 body {
     font-size:13px;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #ffee9b;
+    background-color: #a09d92;
 }
 
 h1 {
     size:2rem;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+p {
+    line-height: 1.5;
+}
+
 header {
     background-color: black;
-    /* position: fixed;
-    width: 100%; */
+    position: fixed;
+    width: 100%; 
     
+}
+.navbar {
+    margin-right: 100px;
 }
 
 .navbar li{
     display: inline-block;
     font-size: 1.2rem;
     color: #fff;
-    padding: 10px;
-    border-top: 3px solid;
+    padding: 0 10px;
+    border-bottom: 3px solid;
     border-color: transparent;
 }
 
@@ -35,9 +52,12 @@ header {
     border-color: yellow;
 }
 
+img {
+    max-width: 100%;
+}
+
 footer {
-    background-color: #505000;
-    /* background-color: #b79903; */
+    background-color: #161212;
 }
 
 /************* Grid ************/
@@ -71,27 +91,49 @@ footer {
     grid-column: main-center/main-end;
 }
 
-.section1 {
-    background-color: #fff;
+/***************/
+.sectionFeatures {
+    background-color: #202020;
+    color:#202020
 }
 
-.sectionWireless {
-
-}
-.section2 {
-    background-color: #fff;
+.sectionFeatures h2 {
+    color: #fff;
+    text-align: center;
 }
 
 .sectionSpecifications {
-    background-color: #000000;
+    background-color: #202020;
+    color:white;
 }
 
 .sectionSold {
-    background-color: #fff;
+    background-image: url("../images/bg.png") ;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 400px;
+}
+.button {
+    border: 2px black solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.button--yellow {
+    background-color: #a09d92;
+    font-size: 1.1rem;
+    color:black;
 }
 
 .logo img{
     width: 30%;
+    margin-left: 100px;
+}
+
+.space {
+    padding: 50px 0;
 }
 
 .wrapper {
@@ -99,4 +141,28 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
+.wrapper--vertical {
+    flex-direction: column;
+}
+.wrapper--center {
+    justify-content: center;
+}
+
+.icon__background {
+    border-radius: 50%;
+    width: 7rem;
+    height: 6.88rem;
+    background-color: #fff;
+    margin: 10px 20px;  
+}
+
+.icon:hover .icon__background{
+    background-color: yellow;
+}
+
+.icon:hover h3{
+    color: yellow;
+}
+
 
