@@ -174,8 +174,6 @@ footer {
 .wrapper.wrapper--center.wrapper--vertical--top,
 .wrapper.wrapper--center.wrapper--vertical--bottom{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: row;
 }
 
@@ -187,7 +185,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     margin: 45px;
 }
 
