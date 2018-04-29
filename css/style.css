@@ -9,6 +9,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #a09d92;
+    color: azure;
 }
 
 h1 {
@@ -16,7 +17,8 @@ h1 {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    color: #e0e0e0;
 }
 
 h3 {
@@ -25,24 +27,29 @@ h3 {
 }
 
 p {
+    font-size: 1.1rem;
     line-height: 1.5;
+    margin-right: 10px;
+    
 }
 
 header {
     background-color: black;
     position: fixed;
     width: 100%; 
+    box-shadow: 0 8px 16px 0 #202020;
     
 }
 .navbar {
     margin-right: 100px;
+    
 }
 
 .navbar li{
     display: inline-block;
     font-size: 1.2rem;
     color: #fff;
-    padding: 0 10px;
+    padding: 10px;
     border-bottom: 3px solid;
     border-color: transparent;
 }
@@ -54,6 +61,7 @@ header {
 
 img {
     max-width: 100%;
+    box-shadow: 0 8px 16px 0 #202020;
 }
 
 footer {
@@ -97,7 +105,7 @@ footer {
     color:#202020
 }
 
-.sectionFeatures h2 {
+.sectionFeatures h2 , .sectionSpecifications h2 {
     color: #fff;
     text-align: center;
 }
@@ -116,13 +124,14 @@ footer {
 .button {
     border: 2px black solid;
     border-radius: 5px;
-    margin: 10px;
+    margin: 80px;
     padding: 10px 20px;
     text-decoration: none;
 }
 
 .button--yellow {
-    background-color: #a09d92;
+    /* background-color: #a09d92; */
+    background-color: yellow ;
     font-size: 1.1rem;
     color:black;
 }
@@ -159,10 +168,13 @@ footer {
 
 .icon:hover .icon__background{
     background-color: yellow;
+    transition: all 1s ease-out;
+    
 }
 
 .icon:hover h3{
     color: yellow;
+    transition: all 1s ease-out;
 }
 
 .grid__full.sectionSpecifications{
@@ -180,17 +192,43 @@ footer {
 .wrapper__top-especification {
     border: 3px solid rgb(252, 250, 250);
     border-radius:50%;
-    width: 9%;
+    width: 120px;
+    height: 100px;
     padding: 3% 0%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 45px;
+    text-align: center;
+    margin: 20px;
+}
+
+.wrapper__top-especification p {
+    font-size: 0.8rem;
 }
 
 .wrapper__top-especification:hover{
-    background-color: rgb(119, 116, 113);
+    background-color: yellow;
+    transition: all 1s ease-out;
+    color: #000000;
+    border-color: black
 }
 
+.wrapper--vertical--bottom {
+    padding-bottom: 50px;
+}
+
+.form-control {
+    display: block;
+    
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+   
+}
 
 
